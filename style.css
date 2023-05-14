@@ -50,6 +50,7 @@ h6 {
 .container {
     display: flex;
     align-items: center;
+    flex-direction: column;
     height: 50rem;
 }
 
@@ -60,6 +61,7 @@ h6 {
     padding: 0 2rem;
     border-radius: 2% 2% 50% 2%;
     background-color: var(--white);
+    box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.1);
 }
 
 
@@ -132,6 +134,7 @@ h6 {
 
 .purple {
     color: var(--purple);
+    transition: all 0.3s ease-in-out;
 }
 
 .date-shower {
@@ -162,6 +165,7 @@ h6 {
     aspect-ratio: 1/1;
     width: 4rem;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
     text-align: center;
 }
 
@@ -173,7 +177,7 @@ h6 {
 
 #arrow:hover {
     background-color: var(--off-black);
-
+    scale: 1.1;
 }
 
 .error-text {
@@ -185,6 +189,7 @@ h6 {
 
 
 .date-shower h4 {
+    transition: all 0.3s ease-in-out;
     font-size: 4rem;
 }
 
