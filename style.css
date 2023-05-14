@@ -168,3 +168,6 @@ h1,h2,h3,h4,h5,h6{
 .date-shower h4{
     font-size: 4rem;
 }
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
