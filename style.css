@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap');
+
+:root{
+    --purple:hsl(259, 100%, 65%);
+    --light-red:hsl(0, 100%, 67%);
+
+    /* neutral colors */
+    --white: hsl(0, 0%, 100%);
+    --off-white: hsl(0, 0%, 94%);
+    --light-grey: hsl(0, 0%, 86%);
+    --smokey-grey: hsl(0, 1%, 44%);
+    --off-black: hsl(0, 0%, 8%);
+
+    /* font weights */
+    --normal: 400;
+    --bold: 700;
+    --bolder: 800;
+
+    /* font sizes */
+    --medium:2rem;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--medium);
+    font-weight: var(--normal);
+    background-color: var(--off-white);
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: var(--bold);
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    height: 700px;
+}
+
+/* date-container */
+.date-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    border-radius: 2% 2% 50% 2% ;
+    background-color: var(--white);
+}
+
+
+/* date-inputs */
+.date-container .date-block{
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+    font-weight: var(--normal);
+    color: var(--smokey-grey);
+    outline: none;
+    height: 7rem;
+    position: relative;
+}
+
+
+.date-block label{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+#day-input, #month-input, #year-input{
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    font-size: 1.4rem;
+    border: 1px solid var(--light-grey);
+    border-radius: 5px;
+    width:8rem;
+    font-weight: var(--bold);
+    margin-top: 5px;
+}
+
+#day-input::placeholder, #month-input::placeholder, #year-input::placeholder{
+    text-transform: uppercase;
+}
+#day-input:focus, #month-input:focus, #year-input:focus{
+    outline-style: solid;
+    outline-color: var(--off-black);
+    outline-width: 3px;
+}
+.date{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+
+.date-shower, .date{
+    margin-right: 100px;
+}
+
+.date-output{
+    font-style: italic;
+}
+.purple{
+    color: var(--purple);
+}
+.date-shower{
+    padding: 2rem 0;
+}
+
+.date-container hr{
+    display: inline-block;    
+    width: 100%;
+    color:var(--off-white);
+    height: 0;
+}
+
+.separation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+}
+#arrow{
+    display: inline-block;
+    background-color: var(--purple);
+    color: var(--white);
+    border: none;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    width: 4rem;
+    cursor: pointer;
+    text-align: center;
+}
+#arrow-image{
+    margin: auto;
+    aspect-ratio: 1/1;
+    width: 1.5rem;
+}
+#arrow:hover{
+    background-color: var(--off-black);
+
+}
+
+.error-text{
+    position: absolute;
+    bottom: 0;
+    font-size: smaller;
+}
+
+
+
+.date-shower h4{
+    font-size: 4rem;
+}

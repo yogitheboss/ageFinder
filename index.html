@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgeCalculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="date-container">
+            <div class="date">
+                <div class="date-block day">
+                    <label for="day-input">Day</label>
+                    <input required placeholder="dd" id="day-input" name="day">
+                </div>
+                <div class="date-block month">
+                    <label for="month-input">Month</label>
+                    <input required placeholder="mm" id="month-input" name="month">
+                </div>
+                <div class="date-block year">
+                    <label for="year-input">Year</label>
+                    <input required placeholder="yy" id="year-input" name="year">
+                </div>
+            </div>
+            <div class="separation">
+                <hr>
+                <button id="arrow" onclick="checkDate()">
+                    <img id="arrow-image" src="./icon-arrow.svg"
+                        alt="arrow-image">
+                </button>
+            </div>
+            <div class="date-shower">
+                <div class="year date-output">
+                    <h4>
+                        <span class="purple" id="selected-year">
+                           --
+                        </span>
+                        years
+                    </h4>
+                </div>
+                <div class="month date-output">
+                    <h4>
+                        <span class="purple" id="selected-month">
+                            --
+                        </span>
+                        months
+                    </h4>
+                </div>
+                <div class="day date-output">
+                    <h4>
+                        <span class="purple" id="selected-day">
+                            --
+                        </span>
+                        days
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
