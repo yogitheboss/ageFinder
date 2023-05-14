@@ -50,7 +50,7 @@ h6 {
 .container {
     display: flex;
     align-items: center;
-    height: 700px;
+    height: 50rem;
 }
 
 /* date-container */
@@ -190,7 +190,7 @@ h6 {
 
 @media only screen and (max-width:580px) {
     html {
-        font-size: 90%;
+        font-size: 80%;
     }
 
     #day-input,
@@ -203,7 +203,7 @@ h6 {
         position: relative;
     }
     .error-text {
-        bottom: -14px;
+        bottom: -20px;
     }
     #arrow {
         position: absolute;
@@ -211,14 +211,9 @@ h6 {
     }
 }
 
-
-
-
-
-
 @media only screen and (max-width:364px) {
     html {
-        font-size: 70%;
+        font-size: 60%;
     }
 
     .error-text {
@@ -235,16 +230,6 @@ h6 {
         left: 45%;
     }
 }
-
-
-
-
-
-
-
-
-
-
 
 
 .attribution {
